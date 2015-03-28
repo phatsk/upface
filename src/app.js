@@ -4,8 +4,8 @@ var V = require('vector2');
 var face = new UI.Window();
 
 var bg = new UI.Rect({
-    position: new V(10, 20),
-    size: new V(124, 60),
+    position: new V(0, 0),
+    size: new V(144, 168),
     backgroundColor: 'white'
 });
 

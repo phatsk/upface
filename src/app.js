@@ -1,8 +1,8 @@
 var UI = require('ui');
 
-var card = new UI.Card({
-    title: 'UP Face',
-    subtitle: 'Fetching...'
-});
+var face = new UI.Window();
+var time = new TimeText({text: '%a'});
 
-card.show();
+face.add(time);
+
+face.show();

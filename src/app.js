@@ -1,5 +1,6 @@
 var UI = require('ui');
 var V = require('vector2');
+var Settings = require('settings');
 
 var face = new UI.Window();
 

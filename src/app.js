@@ -9,6 +9,8 @@ var bg = new UI.Rect({
     backgroundColor: 'white'
 });
 
+face.add(bg);
+
 var timeText = new UI.TimeText({
   position: new V(0, 25),
   size: new V(144, 30),

@@ -23,3 +23,9 @@ var timeText = new UI.TimeText({
 face.add(timeText);
 
 face.show();
+
+Settings.config({
+    url: 'https://api-phatsk.rhcloud.com/up.php'
+},function(e) {
+    console.log(e.response);    
+})

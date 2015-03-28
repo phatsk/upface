@@ -25,8 +25,22 @@ face.add(timeText);
 
 face.show();
 
+if(Settings.option('access_token'))
+{
+    console.log(Settings.option('access_token'));
+}
+
 Settings.config({
     url: 'https://api-phatsk.rhcloud.com/up.php'
 },function(e) {
-    console.log(e.response);    
+    var response = JSON.parse(e.response);
+
+    if(response.failed)
+    {
+    
+    }
+    else
+    {
+        Settings.option('access_token', response.access_token);
+    }
 })
